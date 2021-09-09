@@ -15,8 +15,36 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/01.jpg); */
 }
 
+.bg.one {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/01.jpg);
+}
+.bg.two {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/02.jpg);
+}
+.bg.three {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/03.jpg);
+}
+.bg.four{
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/04.jpg);
+}
+.bg.five {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/05.jpg);
+}
+.bg.six {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/06.jpg);
+}
+.bg.seven {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/07.jpg);
+}
+.bg.eight {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/08.jpg);
+}
+.bg.nine {
+background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/09.jpg);
+}
 h1 {
   color: white;
   text-shadow: 1px 1px 3px black;
