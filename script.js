@@ -15,7 +15,7 @@ end: "top 100px",
   }
   });
 gsap.to(".b", {
-    y: 950,
+    y: 350,
   rotation: 0,
   scrollTrigger: {
     trigger: ".b",
@@ -27,7 +27,7 @@ gsap.to(".b", {
   }
 });
 
-gsap.fromTo(".c", {autoAlpha: 0}, {autoAlpha: 0.5, duration: 1} {
+gsap.to(".c", {
     x: 250,
   rotation: 0,
   scrollTrigger: {
