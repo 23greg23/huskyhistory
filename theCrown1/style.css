@@ -1,4 +1,9 @@
-section {
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+  section {
   position: relative;
   /* height: 100vh; */
   display: flex;
@@ -43,6 +48,9 @@ background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg
 background-image: url(https://news.northeastern.edu/interactive/huskyHistory/bkg/light/08.jpg);
 }
 
+.topperIntro img{
+  width: 100%;
+}
 h1 {
   color: #fbf9e7;
 font-family: 'Pinyon Script', cursive;
@@ -62,7 +70,7 @@ color: #fbf9e7;
 font-family: harriet,serif;
 font-size: .8em;} */
 p {
-font-size: 1.3em;
+font-size: 1.5em;
 font-family: harriet,serif;
 line-height: 1.55;
 color: #fff;
