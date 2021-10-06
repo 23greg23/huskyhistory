@@ -4,6 +4,7 @@ var $ = jQuery;
 $(document).ready(function(){
 	var timelineBlocks = $('.cd-timeline-block'),
 		offset = 0.5;
+    
 
    //hide timeline blocks which are outside the viewport
  
@@ -29,5 +30,5 @@ $(document).ready(function(){
 			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 		});
 	}
-         
+
 });
