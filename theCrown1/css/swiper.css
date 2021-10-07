@@ -1,19 +1,3 @@
-/*
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-*/
 
 .swiper {
   width: 100%;
@@ -41,16 +25,16 @@ body {
 }
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
-    top: 80%!important;
+    top: 70%!important;
 color: #fff!important;}
 
 swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 80px!important;
+    bottom: 120px!important;
     color: #fff!important;
 }
 .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: #000!important;}
+    background: #fff!important;}
 
 .swiper-slide img {
   display: block;
@@ -85,7 +69,83 @@ p.caption {
     padding: 1em;
     margin-top: -15px;
     z-index: 100;
+/*    height: 120px;*/
+}
+p.smallPhotoCaption {
+    font-family: akkurat, san-serif;
+    font-size: .8em;
+    color: #666;
+    text-align: center;
+
 }
 
+div.smallPhotosTop {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 600px;
+    left: -580px;
+    display: block;
+}
+div.smallPhotosTop3 {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 470px;
+    left: -440px;
+    display: block;
+    z-index: 100;
+}
+div.smallPhoto1a {
+    width: 50%;
+    float: left;
+transform: rotate(-5deg);
+}
+div.smallPhoto1b {
+    width: 50%;
+    float: left;
+    transform: rotate(5deg);
+}
+div.smallPhoto3a {
+    width: 70%;
+    float: left;
+transform: rotate(-5deg);
+}
+.swiper-css-mode>.swiper-wrapper>.swiper-slide {
+    border: 1px solid #333;
+}
+div.smallPhoto1a img, div.smallPhoto1b img, div.smallPhoto3a img {box-shadow: 10px 10px 5px rgb(0 0 0 / 50%);}
+.borderwhiteSmall {border: 12px solid #fff;}
+
 .cd-timeline-block.firstKing div.explainer {margin-top: -32em;}
-/*.cd-timeline-block.firstKing div.slideLeft {top: -3.8em;}*/
+.cd-timeline-block.stableReign div.explainer {margin-top: -28em;
+    float: left;}
+.cd-timeline-block.tumult div.explainer {margin-top: -29em;}
+.cd-timeline-block.interregnum div.explainer {margin-top: -30em;float: left;}
+.cd-timeline-block.return div.explainer {margin-top: -27em;}
+.cd-timeline-block.darkthrone div.explainer {margin-top: -26em; float: left;}
+.cd-timeline-block.longest div.explainer {margin-top: -29em;}
+.cd-timeline-block.beginning div.explainer {margin-top: -30em; float: left;}
+
+/*
+h1.article-topper__h--big-image {display: none;}
+.article-topper--big-image .article-topper__meta-info, .article-topper--data-viz-white .article-topper__meta-info, .article-topper--image-side .article-topper__meta-info, .article-topper--simple-white .article-topper__meta-info {
+    border-bottom: 1px solid rgba(0,0,0,.6);
+    margin-top: 8em;
+}
+
+div.topintro {
+    max-width: 600px;
+    padding: 20px;
+    color: #333;
+    float: left;
+    position: absolute;
+    top: -600px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+*/
+
+div.topintro p {
+    font-size: 1.5em;
+}
