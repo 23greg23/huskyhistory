@@ -1,0 +1,155 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 70%!important;
+color: #fff!important;}
+
+swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 120px!important;
+    color: #fff!important;
+}
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fff!important;}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.slideLeft {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+div.slideRight {
+    float: right;
+    width: 50%;
+    position: relative;
+}
+
+div.swiper-slide {
+    display: block;
+}
+div.swiper-slide img {
+}
+p.caption {
+    font-family: akkurat, san-serif;
+    font-size: .8em;
+    color: #fff;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    margin-top: -15px;
+    z-index: 100;
+min-height: 80px;
+}
+p.smallPhotoCaption {
+    font-family: akkurat, san-serif;
+    font-size: .8em;
+    color: #666;
+    text-align: center;
+}
+
+div.smallPhotosTop {
+    width: 45%;
+    float: left;
+    position: relative;
+    top: 600px;
+    left: -48%;
+    display: block;
+}
+div.smallPhotosTop3 {
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 470px;
+    left: -45%;
+    display: block;
+    z-index: 100;
+}
+div.smallPhoto1a {
+    width: 50%;
+    float: left;
+transform: rotate(-5deg);
+}
+div.smallPhoto1b {
+    width: 50%;
+    float: left;
+    transform: rotate(5deg);
+}
+div.smallPhoto3a {
+    width: 70%;
+    float: left;
+transform: rotate(-5deg);
+}
+.swiper-css-mode>.swiper-wrapper>.swiper-slide {
+    border: 1px solid #333;
+}
+div.smallPhoto1a img, div.smallPhoto1b img, div.smallPhoto3a img {box-shadow: 10px 10px 5px rgb(0 0 0 / 50%);}
+.borderwhiteSmall {border: 12px solid #fff;}
+
+.cd-timeline-block.firstKing div.explainer {margin-top: -120%;}
+.cd-timeline-block.stableReign div.explainer {margin-top: -28em;
+    float: left;}
+.cd-timeline-block.tumult div.explainer {margin-top: -29em;}
+.cd-timeline-block.interregnum div.explainer {margin-top: -30em;float: left;}
+.cd-timeline-block.return div.explainer {margin-top: -27em;}
+.cd-timeline-block.darkthrone div.explainer {margin-top: -26em; float: left;}
+.cd-timeline-block.longest div.explainer {margin-top: -29em;}
+.cd-timeline-block.beginning div.explainer {margin-top: -30em; float: left;}
+
+div.topintro p {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+.cd-timeline-block.firstKing div.explainer {margin-top: -130%;}
+}
+@media only screen and (max-width: 800px) {
+div.slideLeft, div.slideRight {
+width: 100%;}  
+div.smallPhotosTop, div.smallPhotosTop3 {display: none;}
+
+.cd-timeline-block.stableReign div.explainer {margin-top: -28em; float: none;}
+.cd-timeline-block.tumult div.explainer {margin-top: -29em;}
+.cd-timeline-block.interregnum div.explainer {margin-top: -30em;float: none;}
+.cd-timeline-block.return div.explainer {margin-top: -27em;}
+.cd-timeline-block.darkthrone div.explainer {margin-top: -26em; float: none;}
+.cd-timeline-block.longest div.explainer {margin-top: -29em;}
+.cd-timeline-block.beginning div.explainer {margin-top: -30em; float: none;}
+}
+
+@media only screen and (max-width: 425px) {
+.swiper-button-next, .swiper-button-prev, swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {display: none!important;}
+    .cd-timeline-block.firstKing div.explainer {
+    float:left;
+    margin-top: -3em;
+}
+p.caption {
+min-height: 120px;
+}
+}
