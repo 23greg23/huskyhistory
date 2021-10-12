@@ -116,7 +116,6 @@ div.topintro{
 	color: #333;
 }
 
-
 /* --------------------------------
 
 shapes and containers
@@ -147,13 +146,7 @@ cd-timeline-content .cd-date {
 
 }
 
-div.mobileDate{
-/*	 background: #cc0000;*/
-	width: 100px;
-	height: 50px;
-}
-div.mobileDate img{
-	width: 100%;}
+
 /* --------------------------------
 
 Main components
@@ -171,8 +164,8 @@ Main components
 
 
 .cd-timeline-img.cd {
-  background: #cc9933;
-    z-index: 100;
+background: #cc9933;
+z-index: 100;
 }
 
 .cd-timeline-img {
@@ -197,16 +190,15 @@ Main components
 
 /* MEDIA QUERIES */
  /* 1170 1 */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 800px) {
+
     
 #cd-timeline {
   position: relative;
-/*  padding: 2em 0;*/
   margin-top: 0em;
   margin-bottom: 2em;
 }
 #cd-timeline::before {
-  /* this is the vertical line */
   content: '';
   position: absolute;
   top: 0;
@@ -240,13 +232,14 @@ clear: both;
 
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 800px) {
+
 .cd-timeline-content .cd-date {
     float: left;
     margin-top: -100px;
     padding: 12px;
 }
-/*.cd-timeline-img, .cd-timeline-content::before  {display: none;}*/
+
 
     p.mobileDate {
     font-family: akkurat,sans-serif;
@@ -258,13 +251,13 @@ clear: both;
 	border: 1px solid #fff;
 	width: 100px;
 	height: 20px;
-    position: relative;
-    top: -100px;
-    display: none;}
+
+   }
     
     #kingHusky div.explainer h1 {
     margin-top: 1em;}
 }
+
   .cd-timeline-img {
     width: 100px;
     height: 100px;
@@ -280,24 +273,24 @@ clear: both;
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.8s;
     -moz-animation: cd-bounce-1 0.8s;
-    animation: cd-bounce-1 0.8s;}
+    animation: cd-bounce-1 0.8s;
+}
+
 
 }
  /* 1053 */
 /* Break to tablet size */
-@media only screen and (max-width: 1053px) {
+@media only screen and (max-width: 800px) {
 .article-content {
 padding: 0px 20px 0;}
+    
 .cd-timeline-img, .cd-timeline-content::before  {display: none;}
+ 
 .cd-timeline-content .cd-date {
 float: left;
 margin-top: -100px;
 padding: 12px;
 }
-div.nodeal, div.deal {
-width: 30%;
-margin-right: 30px;
-float: left;}
 
 cd-timeline-block {
 position: relative;
@@ -309,10 +302,15 @@ float: left;
 margin-top: -60px;
 }
 cd-timeline-content .cd-date {
+/*
     float: left;
     opacity: .7;
     padding: 20px;
     margin-top: -100px;
+*/
+}
+.cd-timeline-content {
+  margin-left: 0px;
 }
 .cd-timeline-block {
   margin: 4em 0;
@@ -385,12 +383,7 @@ animation: cd-bounce-1 1s;
     transform: scale(1);
   }
 }
-.cd-timeline-content {
-  position: relative;
-  margin-left: 60px;
-  border: none;
-  padding: 0em;
-}
+
 .cd-timeline-content:after {
   content: "";
   display: table;
@@ -422,7 +415,6 @@ div.clear{clear: both;}
 float: left;
 margin-top: -100px;
 width: 45%;}
-
 }
 
  /* 778 1 */
@@ -445,11 +437,12 @@ margin-top: 0px;}
 span.cd-date, div.explainer{width: 100%;}
 span.cd-date img {width: 100%;}
 */
-.cd-timeline-content {margin-bottom: 30px;}
+.cd-timeline-XXXcontent {margin-bottom: 30px;}
 }
 
  /* 1170 2 */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 800px) {
+
   .cd-timeline-content {
     margin-left: 0;
     padding: .6em;
@@ -462,18 +455,8 @@ span.cd-date img {width: 100%;}
     border-right-color: #cc0000;
 
   }
-  .cd-timeline-content .cd-read-more {
-    float: left;
-  }
-/*
-  .cd-timeline-content .cd-date {
-    position: absolute;
-    width: 100%;
-   left: 125%;
-    top: 110px;
+    
 
-  }
-*/
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
   }
@@ -490,7 +473,6 @@ border-color: transparent;
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 126%;
-/*    text-align: right;*/
   }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
@@ -502,11 +484,13 @@ border-color: transparent;
     animation: cd-bounce-2 0.6s;
   }
 
-  /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;}
+
+
+  }
 }
  /* 475 */
 @media only screen and (max-width: 475px) {
@@ -628,7 +612,10 @@ border-color: transparent;
   }
 }
 
+@media only screen and (max-width: 800px) {
+    .cd-timeline-img.cd {display: none}
 
+}
 @media only screen and (max-width: 425px) {
 
 .cd-timeline-content .cd-date {
@@ -637,6 +624,10 @@ border-color: transparent;
 .cd-timeline-content {
 margin-left: 0px;
 }
+    #kingHusky div.explainer h1, #kingHusky div.explainer h2{
+        font-size: 1.7em;
+    }
+
 }
 @media only screen and (max-width: 380px) {
 .cd-container {
@@ -648,6 +639,8 @@ width: 100%;
     border: none;
     padding: 0em;
 }
+
+
 
 .cd-timeline-img, .cd-timeline-content::before  {display: none;}
 }

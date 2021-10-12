@@ -1,15 +1,11 @@
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -69,22 +65,21 @@ p.caption {
     padding: 1em;
     margin-top: -15px;
     z-index: 100;
-/*    height: 120px;*/
+min-height: 80px;
 }
 p.smallPhotoCaption {
     font-family: akkurat, san-serif;
     font-size: .8em;
     color: #666;
     text-align: center;
-
 }
 
 div.smallPhotosTop {
-    width: 50%;
+    width: 45%;
     float: left;
     position: relative;
     top: 600px;
-    left: -580px;
+    left: -48%;
     display: block;
 }
 div.smallPhotosTop3 {
@@ -92,7 +87,7 @@ div.smallPhotosTop3 {
     float: left;
     position: relative;
     top: 470px;
-    left: -440px;
+    left: -45%;
     display: block;
     z-index: 100;
 }
@@ -117,7 +112,7 @@ transform: rotate(-5deg);
 div.smallPhoto1a img, div.smallPhoto1b img, div.smallPhoto3a img {box-shadow: 10px 10px 5px rgb(0 0 0 / 50%);}
 .borderwhiteSmall {border: 12px solid #fff;}
 
-.cd-timeline-block.firstKing div.explainer {margin-top: -32em;}
+.cd-timeline-block.firstKing div.explainer {margin-top: -120%;}
 .cd-timeline-block.stableReign div.explainer {margin-top: -28em;
     float: left;}
 .cd-timeline-block.tumult div.explainer {margin-top: -29em;}
@@ -127,25 +122,34 @@ div.smallPhoto1a img, div.smallPhoto1b img, div.smallPhoto3a img {box-shadow: 10
 .cd-timeline-block.longest div.explainer {margin-top: -29em;}
 .cd-timeline-block.beginning div.explainer {margin-top: -30em; float: left;}
 
-/*
-h1.article-topper__h--big-image {display: none;}
-.article-topper--big-image .article-topper__meta-info, .article-topper--data-viz-white .article-topper__meta-info, .article-topper--image-side .article-topper__meta-info, .article-topper--simple-white .article-topper__meta-info {
-    border-bottom: 1px solid rgba(0,0,0,.6);
-    margin-top: 8em;
-}
-
-div.topintro {
-    max-width: 600px;
-    padding: 20px;
-    color: #333;
-    float: left;
-    position: absolute;
-    top: -600px;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-*/
-
 div.topintro p {
     font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+.cd-timeline-block.firstKing div.explainer {margin-top: -130%;}
+}
+@media only screen and (max-width: 800px) {
+div.slideLeft, div.slideRight {
+width: 100%;}  
+div.smallPhotosTop, div.smallPhotosTop3 {display: none;}
+
+.cd-timeline-block.stableReign div.explainer {margin-top: -28em; float: none;}
+.cd-timeline-block.tumult div.explainer {margin-top: -29em;}
+.cd-timeline-block.interregnum div.explainer {margin-top: -30em;float: none;}
+.cd-timeline-block.return div.explainer {margin-top: -27em;}
+.cd-timeline-block.darkthrone div.explainer {margin-top: -26em; float: none;}
+.cd-timeline-block.longest div.explainer {margin-top: -29em;}
+.cd-timeline-block.beginning div.explainer {margin-top: -30em; float: none;}
+}
+
+@media only screen and (max-width: 425px) {
+.swiper-button-next, .swiper-button-prev, swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {display: none!important;}
+    .cd-timeline-block.firstKing div.explainer {
+    float:left;
+    margin-top: -3em;
+}
+p.caption {
+min-height: 120px;
+}
 }
