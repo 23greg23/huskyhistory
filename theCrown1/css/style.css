@@ -17,7 +17,7 @@ html * {
 body {
 overflow-x: hidden;
 background-color: #fff;
-background-image: url('../img/bkg.svg');
+/* background-image: url('../img/bkg.svg'); */
 background-size: cover;
 }
 
@@ -192,7 +192,7 @@ z-index: 100;
  /* 1170 1 */
 @media only screen and (min-width: 800px) {
 
-    
+
 #cd-timeline {
   position: relative;
   margin-top: 0em;
@@ -253,7 +253,7 @@ clear: both;
 	height: 20px;
 
    }
-    
+
     #kingHusky div.explainer h1 {
     margin-top: 1em;}
 }
@@ -283,9 +283,9 @@ clear: both;
 @media only screen and (max-width: 800px) {
 .article-content {
 padding: 0px 20px 0;}
-    
+
 .cd-timeline-img, .cd-timeline-content::before  {display: none;}
- 
+
 .cd-timeline-content .cd-date {
 float: left;
 margin-top: -100px;
@@ -455,7 +455,7 @@ span.cd-date img {width: 100%;}
     border-right-color: #cc0000;
 
   }
-    
+
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;

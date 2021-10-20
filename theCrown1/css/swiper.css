@@ -131,7 +131,7 @@ div.topintro p {
 }
 @media only screen and (max-width: 800px) {
 div.slideLeft, div.slideRight {
-width: 100%;}  
+width: 100%;}
 div.smallPhotosTop, div.smallPhotosTop3 {display: none;}
 
 .cd-timeline-block.stableReign div.explainer {margin-top: -28em; float: none;}
