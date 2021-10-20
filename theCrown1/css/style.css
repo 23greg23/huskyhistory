@@ -17,7 +17,7 @@ html * {
 body {
 overflow-x: hidden;
 background-color: #fff;
-/* background-image: url('../img/bkg.svg'); */
+/*background-image: url('../img/bkg.svg');*/
 background-size: cover;
 }
 
@@ -40,7 +40,8 @@ font-weight: 600;
 font-size: 80%;
 width: 100%;
 text-align: center;
-margin-top: -45%;
+    position: relative;
+    top: 38px;
 }
 
 p.mobileDate {display: none;}
@@ -52,6 +53,9 @@ p.smallDate {
 margin: 5px 0px 0px 5px;
 }
 
+p.intro {
+margin-bottom: 2.5em
+}
 .cd-timeline-img.cd-dateRange {
     width: 60px;
     height: 60px;
@@ -188,11 +192,10 @@ z-index: 100;
   margin-top: -12px;
 }
 
+
 /* MEDIA QUERIES */
  /* 1170 1 */
 @media only screen and (min-width: 800px) {
-
-
 #cd-timeline {
   position: relative;
   margin-top: 0em;
@@ -208,17 +211,18 @@ z-index: 100;
   background: rgba(219, 136, 21, 0.08);
 }
 #cd-timeline {
-    margin-top: -3em;
-    margin-bottom: 6em;}
-  #cd-timeline::before {
-    left: 50%;
-    margin-left: -25px;}
-
+margin-bottom: 6em;}
+#cd-timeline::before {
+left: 50%;
+margin-left: -25px;}
 .cd-timeline-block {
 position: relative;
 margin: 2em 0em 2em 0em;
-clear: both;
-}
+clear: both;}
+.cd-timeline-block.tumult {
+position: relative;
+margin: 2em 0em 5em 0em;
+clear: both;}
 .cd-timeline-block:after {
   content: "";
   display: table;
